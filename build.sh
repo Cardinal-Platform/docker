@@ -8,6 +8,6 @@ rm -rf Cardinal
 mkdir Cardinal
 tar xvzf Cardinal_* -C Cardinal
 rm -rf Cardinal_*
-curl -L -O "https://cardinal-platform.github.io/Cardinal-Docker/Dockerfile"
-curl -L -O "https://cardinal-platform.github.io/Cardinal-Docker/docker-compose.yml"
+curl -L -O "https://sh.cardinal.ink/Dockerfile"
+curl -L -O "https://sh.cardinal.ink/docker-compose.yml"
 docker-compose up -d

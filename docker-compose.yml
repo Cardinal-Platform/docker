@@ -4,14 +4,11 @@ services:
     build:
       context: ./
       args:
-        - Title=HCTF      #比赛名称
         - Language=zh-CN  #比赛语言 zh-CN/en-US 可选
         - BeginTime=2020-02-17T12:00:00-05:00 #比赛开始时间，参考该格式修改
         - EndTime=2020-02-18T12:00:00-05:00   #比赛结束时间，参考该格式修改
         - Duration=2    #每轮持续时间，单位分钟
         - Port=19999    #端口
-        - FlagPrefix=hctf{    #flag前缀
-        - FlagSuffix=}        #flag后缀
         - CheckDownScore=50   #CheckDown扣分
         - AttackScore=50      #攻陷得分
     environment:

@@ -17,7 +17,6 @@ COPY ./Cardinal /Cardinal
 RUN chmod +x /Cardinal/Cardinal && \
     mkdir /Cardinal/conf && \
     echo -e "[base] #基础配置\n\
-        Title=\"${Title}\"\n\
         SystemLanguage=\"${Language}\"\n\
         BeginTime=\"${BeginTime}\"\n\
         RestTime=[\n\
@@ -28,8 +27,6 @@ RUN chmod +x /Cardinal/Cardinal && \
         SeparateFrontend=false\n\
         Salt=\"$(cat /proc/sys/kernel/random/uuid)\"\n\
         Port=\":${Port}\"\n\
-        FlagPrefix=\"${FlagPrefix}\"\n\
-        FlagSuffix=\"${FlagSuffix}\"\n\
         CheckDownScore=${CheckDownScore}\n\
         AttackScore=${AttackScore}\n\
         \n\
